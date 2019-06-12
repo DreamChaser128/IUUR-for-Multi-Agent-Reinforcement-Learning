@@ -156,7 +156,7 @@ class MADDPGAgentTrainer_prey(AgentTrainer):
         self.args = args
         # Create experience buffer
         self.replay_buffer = ReplayBuffer(5000)
-        self.max_replay_buffer_len = 5000  # 容量：2500
+        self.max_replay_buffer_len = 5000  
         self.replay_sample_index = None
 
     def experience(self, obs, act, rew, new_obs, done):
@@ -215,7 +215,7 @@ class MADDPGAgentTrainer_prey(AgentTrainer):
         obs_nc.append(obs)
         q_loss = public_network_good.q_train(*(obs_nc + act_n + [target_q]))
 
-        # train p network  Actor网络
+        # train p network 
         p_loss = public_network_good.p_train(*(obs_nc + act_n))
         # update network
         public_network_good.p_update()
