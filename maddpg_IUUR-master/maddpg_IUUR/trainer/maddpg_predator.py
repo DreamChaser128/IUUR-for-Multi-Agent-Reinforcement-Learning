@@ -158,7 +158,7 @@ class MADDPGAgentTrainer_predator(AgentTrainer):
         self.args = args
         # Create experience buffer
         self.replay_buffer = ReplayBuffer(5000)
-        self.max_replay_buffer_len = 5000  # 容量：2500
+        self.max_replay_buffer_len = 5000  
         self.replay_sample_index = None
 
     def experience(self, obs, act, rew, new_obs, done):
