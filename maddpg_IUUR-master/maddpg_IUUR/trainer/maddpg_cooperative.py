@@ -202,7 +202,7 @@ class MADDPGAgentTrainer(AgentTrainer):
         obs_nc.append(obs)
         q_loss = public_network.q_train(*(obs_nc + act_n + [target_q]))
 
-        # train p network  Actor网络
+        # train p network
         p_loss = public_network.p_train(*(obs_nc + act_n))
 
         #update network
