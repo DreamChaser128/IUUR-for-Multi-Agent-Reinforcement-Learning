@@ -42,19 +42,19 @@ We set up three chase one as simple scenes(Predator_3-prey_1) and six chase two 
 图。
 
 We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
-- performance comparison in Predator_3-Prey_1
--- the prey is MADDPG while the predators are replaced by IU and IUUR:
-图。
--- the predator is MADDPG while the preys are replaced by IU and IUUR:
-图。
+- **performance comparison in Predator_3-Prey_1**
+  - the prey is MADDPG while the predators are replaced by IU and IUUR:
+  图。
+  - the predator is MADDPG while the preys are replaced by IU and IUUR:
+  图。
 
 IUUR outperforms MADDPG a lot. IU’s performance is slightly worse than that of MADDPG which is out of our expectation.
 
-- performance comparison in Predator_6-prey_2
--- the prey is MADDPG while the predators are replaced by IU and IUUR:
-图。
--- the predator is MADDPG while the preys are replaced by IU and IUUR:
-图。
+- **performance comparison in Predator_6-prey_2**
+  - the prey is MADDPG while the predators are replaced by IU and IUUR:
+   图。
+  - the predator is MADDPG while the preys are replaced by IU and IUUR:
+   图。
 
 IU outperforms MADDPG a lot while IUUR’s performance is worse than that of MADDPG. The reason is that as the number of agents increases, nonstationarity arises in multi-agent reinforcement learning gets more serious. 
 
