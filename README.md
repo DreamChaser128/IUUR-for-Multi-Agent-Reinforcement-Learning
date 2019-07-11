@@ -1,6 +1,6 @@
-#+TITLE: Two improvements based on MADDPG algorithm
-#+AUTHOR: ljc
-#+STARTUP: content
+#+ TITLE: Two improvements based on MADDPG algorithm
+#+ AUTHOR: ljc
+#+ STARTUP: content
 
 * 1. Introduction
 
