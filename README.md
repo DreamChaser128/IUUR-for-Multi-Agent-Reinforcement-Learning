@@ -34,6 +34,7 @@ We set up a simple environment with three agents (Spread_3) and a complex enviro
  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**Spread_3**&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;**Spread_10**<br />
 
 We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
+
  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_3_comparison.png' alt='Spread_3_comparison' width='300' height='300'> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_10_comparison.png' alt='Spread_10_comparison' width='300' height='300'><br />
  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;**Spread_3_comparison**&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;**Spread_10_comparison**<br />
 
@@ -41,22 +42,23 @@ As can be seen from the figure, IUUR converges quickly and after 20,000 episodes
 
 ### ②mixed cooperative-competitive environment (the baseline is MADDPG vs MADDPG)
 We set up three chase one as simple scenes(Predator_3-prey_1) and six chase two as complex scenes(Predator_6-prey_2).
-图。
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1.png' alt='Predator_3-Prey_1' width='270' height='270'> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_6-Prey_2.png' alt='Predator_6-Prey_2' width='270' height='270'><br />
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**Predator_3-Prey_1**&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**Predator_6-Prey_2**<br />
 
 We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
 - **performance comparison in Predator_3-Prey_1**
   - the prey is MADDPG while the predators are replaced by IU and IUUR:
-  图。
+   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1_predator_comparison.png' alt='Predator_3-Prey_1_predator_comparison' width='270' height='270'> 
   - the predator is MADDPG while the preys are replaced by IU and IUUR:
-  图。
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1_prey_comparison.png' alt='Predator_3-Prey_1_prey_comparison' width='270' height='270'> 
 
-  IUUR outperforms MADDPG a lot. IU’s performance is slightly worse than that of MADDPG which is out of our expectation.
+  **IUUR outperforms MADDPG a lot. IU’s performance is slightly worse than that of MADDPG which is out of our expectation.**
 
 - **performance comparison in Predator_6-prey_2**
   - the prey is MADDPG while the predators are replaced by IU and IUUR:
-   图。
+   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_6-Prey_2_predator_comparison.png' alt='Predator_6-Prey_2_predator_comparison' width='270' height='270'> 
   - the predator is MADDPG while the preys are replaced by IU and IUUR:
-   图。
+   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_6-Prey_2_prey_comparison.png' alt='Predator_6-Prey_2_prey_comparison' width='270' height='270'> 
 
-  IU outperforms MADDPG a lot while IUUR’s performance is worse than that of MADDPG. The reason is that as the number of agents increases, nonstationarity arises in multi-agent reinforcement learning gets more serious. 
+  **IU outperforms MADDPG a lot while IUUR’s performance is worse than that of MADDPG. The reason is that as the number of agents increases, nonstationarity arises in multi-agent reinforcement learning gets more serious.**
 
