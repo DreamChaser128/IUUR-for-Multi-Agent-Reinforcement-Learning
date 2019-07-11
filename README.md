@@ -23,7 +23,7 @@ There are mainly two environments:fully-cooperative and mixed cooperative-compet
 
 Installation method and dependency package versions are the same as MAPPDG:
 
-- To experimental environment install: cd into the root directory and type pip install -e .
+- To experimental environment install: cd into the root directory(multiagent-particle-envs-master) and type pip install -e .
 - Known dependencies: Python (3.5.4), OpenAI gym (0.10.5), tensorflow (1.8.0), numpy (1.14.5)
 
 ## 4. Results
@@ -61,4 +61,13 @@ We run five random seeds for each environment and compare the performance among 
    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_6-Prey_2_prey_comparison.png' alt='Predator_6-Prey_2_prey_comparison' width='270' height='270'> 
 
   **IU outperforms MADDPG a lot while IUUR’s performance is worse than that of MADDPG. The reason is that as the number of agents increases, nonstationarity arises in multi-agent reinforcement learning gets more serious.**
+ 
+## 5. Conclusions
+- This paper presents iteration updating and unified representation. lterative update is used to stabilize the environment and unified representation take the advantages of tensor compute to save memory and speed up the interaction with environment. 
+- Though our experiments are based on MADDPG, this method is also suitable for most of multi-agent algorithms like IQL, VDN, QMIX etc.
+
+## 6. Future Work
+- due to the limited computing resources, we only expand the number of agents to a certain extent, which can be further verified in more complex environments.
+- At present, we only simply control the learning frequency of iterative update hyperparameter K through experience, which is a research direction in the future.
+- how to realize the iterative update method in this unified representative network,This will be further improved in the future work. (considering the value fixing method based on Bellman Equation can only guarantee a smaller L_2 norm of its gradients)   
 
