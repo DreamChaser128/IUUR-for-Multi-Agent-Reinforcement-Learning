@@ -30,7 +30,7 @@ Installation method and dependency package versions are the same as MAPPDG:
 
 ### ①fully-cooperative environment
 We set up a simple environment with three agents (Spread_3) and a complex environment with ten agents(Spread_10).
-<img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_3.png' alt='Spread_3' width='200' height='200'> <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_10.png' alt='Spread_10' width='200' height='200' style='margin-left:30px;'><br />
+<img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_3.png' alt='Spread_3' width='200' height='200'> <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_10.png' alt='Spread_10' width='200' height='200' style='margin-left:200px;'><br />
 Spread_3
 We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
 图。
