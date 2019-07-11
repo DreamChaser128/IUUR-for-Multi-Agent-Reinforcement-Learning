@@ -30,10 +30,12 @@ Installation method and dependency package versions are the same as MAPPDG:
 
 ### ①fully-cooperative environment
 We set up a simple environment with three agents (Spread_3) and a complex environment with ten agents(Spread_10).
-&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_3.png' alt='Spread_3' width='200' height='200'> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_10.png' alt='Spread_10' width='200' height='200'><br />
-Spread_3
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_3.png' alt='Spread_3' width='270' height='270'> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_10.png' alt='Spread_10' width='270' height='270'><br />
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**Spread_3**&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;**Spread_10**<br />
+
 We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
-图。
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_3_comparison.png' alt='Spread_3_comparison' width='300' height='300'> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Spread_10_comparison.png' alt='Spread_10_comparison' width='300' height='300'><br />
+ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;**Spread_3_comparison**&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;**Spread_10_comparison**<br />
 
 As can be seen from the figure, IUUR converges quickly and after 20,000 episodes, it has exceeded MADDPG and maintained a steady rise. 
 
