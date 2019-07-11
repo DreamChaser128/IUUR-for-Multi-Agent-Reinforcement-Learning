@@ -23,7 +23,7 @@ There are mainly two environments:fully-cooperative and mixed cooperative-compet
 
 Installation method and dependency package versions are the same as MAPPDG:
 
-- To experimental environment install: cd into the root directory(multiagent-particle-envs-master) and type pip install -e .
+- To environment install: cd into the root directory(multiagent-particle-envs-master) and type pip install -e .
 - Known dependencies: Python (3.5.4), OpenAI gym (0.10.5), tensorflow (1.8.0), numpy (1.14.5)
 
 ## 4. Results
@@ -45,7 +45,7 @@ We set up three chase one as simple scenes(Predator_3-prey_1) and six chase two 
  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1.png' alt='Predator_3-Prey_1' width='270' height='270'> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_6-Prey_2.png' alt='Predator_6-Prey_2' width='270' height='270'><br />
  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**Predator_3-Prey_1**&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;**Predator_6-Prey_2**<br />
 
-We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
+We run **five random seeds** for each environment and compare the performance among MADDPG, IU and IUUR.
 - **performance comparison in Predator_3-Prey_1**
   - the prey is MADDPG while the predators are replaced by IU and IUUR:
    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1_predator_comparison.png' alt='Predator_3-Prey_1_predator_comparison' width='270' height='270'> 
