@@ -48,7 +48,7 @@ We set up three chase one as simple scenes(Predator_3-prey_1) and six chase two 
 We run **five random seeds** for each environment and compare the performance among MADDPG, IU and IUUR.
 - **performance comparison in Predator_3-Prey_1**
   - the prey is MADDPG while the predators are replaced by IU and IUUR:
-   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1_predator_comparison.png' alt='Predator_3-Prey_1_predator_comparison' width='270' height='270'> 
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1_predator_comparison.png' alt='Predator_3-Prey_1_predator_comparison' width='270' height='270'> 
   - the predator is MADDPG while the preys are replaced by IU and IUUR:
   &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <img src='https://github.com/DreamChaser128/IUUR-for-Multi-Agent-Reinforcement-Learning/blob/master/images/Predator_3-Prey_1_prey_comparison.png' alt='Predator_3-Prey_1_prey_comparison' width='270' height='270'> 
 
