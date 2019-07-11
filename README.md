@@ -28,7 +28,7 @@ Installation method and dependency package versions are the same as MAPPDG:
 
 ## 4. Results
 
-### fully-cooperative environment
+### ①fully-cooperative environment
 We set up a simple environment with three agents (Spread_3) and a complex environment with ten agents(Spread_10).
 图。
 
@@ -37,12 +37,12 @@ We run five random seeds for each environment and compare the performance among 
 
 As can be seen from the figure, IUUR converges quickly and after 20,000 episodes, it has exceeded MADDPG and maintained a steady rise. 
 
-### mixed cooperative-competitive (the baseline is MADDPG vs MADDPG)
+### mixed cooperative-competitive environment (the baseline is MADDPG vs MADDPG)
 We set up three chase one as simple scenes(Predator_3-prey_1) and six chase two as complex scenes(Predator_6-prey_2).
 图。
 
 We run five random seeds for each environment and compare the performance among MADDPG, IU and IUUR.
-#### performance comparison in Predator_3-Prey_1
+#### ②performance comparison in Predator_3-Prey_1
 - the prey is MADDPG while the predators are replaced by IU and IUUR:
 图。
 - the predator is MADDPG while the preys are replaced by IU and IUUR:
