@@ -26,7 +26,7 @@ Installation method and dependency package versions are the same as MAPPDG:
 - To environment install: `cd` into the root directory(multiagent-particle-envs-master) and type `pip install -e .`
 - Known dependencies: Python (3.5.4), OpenAI gym (0.10.5), tensorflow (1.8.0), numpy (1.14.5)
 - To run the code, `cd` into the related root directory and run the corresponding  python file. <br />
-  For example,run train_Cooperative_game.py: `python train_Cooperative_game.py`
+  For example,run train_Cooperative_game.py under a scenario named spread_3: `python train_Cooperative_game.py --scenario=spread_3`
 
 ## 4. Results
 
