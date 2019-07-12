@@ -69,7 +69,7 @@ We run **five random seeds** for each environment and compare the performance am
 - This paper presents iteration updating and unified representation. lterative update is used to stabilize the environment and unified representation take the advantages of tensor compute to save memory and speed up the interaction with environment. 
 - Though our experiments are based on MADDPG, this method is also suitable for most of multi-agent algorithms like IQL, VDN, QMIX etc.
 
-## 6. Future Work
+## 6. Future Works
 - Due to the limited computing resources, we only expand the number of agents to a certain extent, which can be further verified in more complex environments.
 - We only simply control the learning frequency of iterative update hyperparameter K through experience, which is a research direction in the future.
 - How to realize the iterative update method in this unified representative network,This will be further improved in the future work. (Considering the value fixing method based on Bellman Equation can only guarantee a smaller `L_2` norm of its gradients)   
